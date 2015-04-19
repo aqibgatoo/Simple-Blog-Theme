@@ -1,0 +1,217 @@
+/*
+Theme Name: Blog Theme
+Author: Aqib Gatoo
+Author URI: http://aqibgatoo.com
+Description: The Simple blog theme.
+Version: 1.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: blogtheme
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/* 00 ::
+   TABLE OF CONTENTS
+   
+   01. Reset
+   02. Layout
+   03. Typography
+   04. Links
+   05. Lists
+   06. Embeds and figures
+   07. Print
+   
+*/
+
+
+/* 01 ::
+   RESET 
+   
+   Credit: HTML5 Boilerplate, Notes Core */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block; }
+
+audio[controls], canvas, video { 
+	display: inline-block; 
+	*display: inline; 
+	*zoom: 1; }
+	
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none; }
+	
+table {
+	border-collapse: collapse;
+	border-spacing: 0; }
+
+
+/* 02 ::
+   LAYOUT */
+
+#outer-wrap {
+	width: 800px;
+	margin: 0 auto; }
+
+#header-container, #main-container, #footer-container {
+	width: 100%; 
+	float: left; }
+
+#header-container {
+	margin-top: 30px; }
+
+#content-container {
+	width: 500px;
+	float: left; }
+
+#sidebar-container {
+	width: 250px;
+	float: right; }
+
+.menu {
+	width: 100%;
+	float: left;
+	margin-bottom: 30px;
+	padding: 15px 0;
+	border: 1px solid #777;
+	border-width: 1px 0; }
+
+.menu ul li {
+	float: left; 
+	margin-right: 15px; }
+
+.post {
+	margin-bottom: 30px; }
+
+.post p {
+	margin-bottom: 16px; }
+
+.widget-container {
+	margin-bottom: 30px; }
+
+
+/* 03 :: 
+   TYPOGRAPHY */
+   
+body, #site-title {
+	font-family: Georgia, "Adobe Garamond", "Times New Roman", serif; }
+
+#post-title, h2, h3, h4, h5, h6, .menu {
+	font-family: Helvetica, Arial, sans-serif; }
+
+#site-title {
+	margin-bottom: 10px; 
+	font-size: 42px;
+	font-weight: 100;
+	font-variant: small-caps; }
+
+#site-description {
+	margin-bottom: 30px; 
+	font-family: Georgia, "Adobe Garamond", "Times New Roman", serif;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: 100;
+	color: #777; }
+
+.post p {
+	font-size: 16px;
+	line-height: 22px;
+	color: #222; }
+
+.entry-title {
+	margin-bottom: 5px;
+	font-size: 24px; }
+
+.post h2 {}
+.post h3 {}
+.post h4 {}
+.post h5 {}
+.post h6 {}
+
+.widget-title {
+	margin-bottom: 5px;
+	font-size: 16px;
+	color: #333; }
+
+.widget-container {
+	line-height: 18px; }
+
+p.entry-meta, #footer-container p, .widget-container {
+	font-size: 14px; }
+
+p.entry-meta, #sidebar-container, #footer-container {
+	color: #666; }
+
+#footer-container p {
+	text-align: right;
+	font-style: italic; }
+
+.menu {
+	font-size: 12px;
+	font-weight: 900;
+	text-transform: uppercase; }
+
+
+/* 04 ::
+   LINKS */
+
+a:link, a:active, a:visited {
+	color: #409fff; }
+
+a:hover {
+	color: #900; 
+	text-decoration: none; }
+
+.menu a {
+	text-decoration: none; }
+
+
+/* 05 ::
+   LISTS */
+
+.post ul, .post ol {
+	margin-bottom: 20px;
+	margin-left: 45px; }
+
+.post ul li {
+	list-style: square;
+	margin-bottom: 5px; }
+
+.post ol li {
+	list-style: decimal;
+	margin-bottom: 5px; }
+
+
+/* 06 ::
+   EMBEDS AND FIGURES */
+   
+/* 07 ::
+   PRINT */
